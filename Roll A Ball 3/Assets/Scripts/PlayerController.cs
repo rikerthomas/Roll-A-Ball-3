@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public GameObject wall;     //Setting the wall as a variable to be able to turn it on and off when needed
     public int enemyHits;    //Variable to keep how many times the player has been hit
     public AudioClip audioClip;     //this allows me to get the audio clip that I need to play when the player reaches the end point of the game
-    public ParticleSystem hitParticles;   //PArticles that play when the player is hit
+    public ParticleSystem hitParticles;   //Particles that play when the player is hit
     public ParticleSystem winParticles;  //this is how the particles play when the player reaches the end point of the game.
     public AudioClip collisionAudio; //Variable of what the audio is when the player is hit.
     AudioSource audioSource;  //This audio source is what allows the audio to play.
@@ -154,6 +154,6 @@ public class PlayerController : MonoBehaviour
     {
         //this increases the enemyHits text, so that the player has an accurate count of how many times they have been hit.
         hitsText.text = "Enemy Hits: " + enemyHits.ToString();
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Count: " + count.ToString() + "/34";
     }
 }
